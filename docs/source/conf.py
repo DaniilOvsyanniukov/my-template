@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Splidity'
+project = 'Solidity'
 copyright = 'ololo'
 author = 'Graziella'
 
