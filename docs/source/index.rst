@@ -1,9 +1,6 @@
 Solidity API
 ============
 
-.. autosummary::
-   :toctree: generated
-
 Agreement
 ---------
 
