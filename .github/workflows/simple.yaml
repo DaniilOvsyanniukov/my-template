@@ -6,7 +6,6 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - run: docs/index.md
       - uses: docker://pandoc/core:2.9
         with:
           args: "pandoc -s -o docs/readme.rst docs/index.md" # gets appended to pandoc command
