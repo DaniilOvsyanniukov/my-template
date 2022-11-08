@@ -1,22 +1,27 @@
-Welcome to Lumache's documentation!
-===================================
+Solidity API
+============
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+.. autosummary::
+   :toctree: generated
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Agreement
+---------
 
-.. note::
+Financial Agreement written in DSL between two or more users
 
-   This project is under active development.
+Agreement contract that is used to implement any custom logic of a
+financial agreement. Ex. lender-borrower agreement
 
-Contents
---------
+parser
+~~~~~~
 
-.. toctree::
+.. code:: solidity
 
-   usage
-   api
+   contract IParser parser
+
+context
+~~~~~~~
+
+.. code:: solidity
+
+   contract IContext context
