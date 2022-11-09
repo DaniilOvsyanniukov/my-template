@@ -9,6 +9,6 @@ jobs:
       - run: echo "foo" > input.txt
       - uses: docker://pandoc/core:2.9
         with:
-          args: "--data-dir=DIRECTORY"
+          args: "--from=markdown --to=rst --output=home/runner/work/my-template/my-template/docs/source/index.rst home/runner/work/my-template/my-template/docs/index.md"
           # "--from=markdown --to=rst --output='docs/source/index.rst' 'docs/index.md'" # gets appended to pandoc command
 # pandoc docs/index.md --from markdown --to rst -s -o readme.rst
