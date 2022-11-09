@@ -5,10 +5,11 @@ on: push
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
+    path: docs
     steps:
       - run: echo "foo" > input.txt
       - uses: docker://pandoc/core:2.9
         with:
-          args: "--from=markdown --to=rst --output=home/runner/work/my-template/my-template/docs/source/index.rst home/runner/work/my-template/my-template/docs/index.md"
+          args: "--from=markdown --to=rst --output=source/index.rst index.md"
           # "--from=markdown --to=rst --output='docs/source/index.rst' 'docs/index.md'" # gets appended to pandoc command
 # pandoc docs/index.md --from markdown --to rst -s -o readme.rst
