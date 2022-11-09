@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: create file list
-        path: docs
+        path: ./docs
         id: files_list
         run: |
           echo "Lorem ipsum" > lorem_1.md  # create two example files
