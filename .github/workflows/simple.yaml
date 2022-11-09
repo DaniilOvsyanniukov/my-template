@@ -6,8 +6,9 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
+      - run: echo "foo" > input.txt
       - uses: docker://pandoc/core:2.9
         with:
-          args: ".libPaths()"
-          # "--from=markdown --to=rst --output='./docs/source/index.rst' './docs/index.md'" # gets appended to pandoc command
+          args: "--help"
+          # "--from=markdown --to=rst --output='docs/source/index.rst' 'docs/index.md'" # gets appended to pandoc command
 # pandoc docs/index.md --from markdown --to rst -s -o readme.rst
