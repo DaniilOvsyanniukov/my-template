@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: docker://pandoc/core:2.9
         with:
-          args: "pandoc -s -o readme.rst index.md" # gets appended to pandoc command
+          args: "--from=rst --to=markdown --output=README.md README.rst" # gets appended to pandoc command
 # pandoc docs/index.md --from markdown --to rst -s -o readme.rst
